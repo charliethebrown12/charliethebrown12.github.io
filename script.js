@@ -37,15 +37,20 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation links with header offset
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            // Set your header height here
+            const headerOffset = 50; // Change this value if your header height is different
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
             });
         }
     });
@@ -66,7 +71,7 @@ contactForm.addEventListener('submit', (e) => {
     // In a real application, you would send this data to a server
     // For now, we'll show a success message using a safer method
     const successMessage = document.createElement('div');
-    successMessage.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #10b981; color: white; padding: 1rem 2rem; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 9999;';
+    successMessage.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #10b981; color: white; padding: 1rem 2rem; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: [...]'
     successMessage.textContent = `Thank you, ${name.substring(0, 50)}! Your message has been received. I'll get back to you soon.`;
     document.body.appendChild(successMessage);
     
