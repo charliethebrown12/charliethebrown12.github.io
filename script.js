@@ -122,19 +122,3 @@ if (heroSubtitle) {
     
     setTimeout(typeWriter, 500);
 }
-
-// Add parallax effect to hero section with throttling for better performance
-let ticking = false;
-window.addEventListener('scroll', () => {
-    if (!ticking) {
-        window.requestAnimationFrame(() => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-            ticking = false;
-        });
-        ticking = true;
-    }
-});
