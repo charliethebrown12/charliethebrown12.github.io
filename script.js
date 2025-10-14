@@ -57,15 +57,23 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+    // Get form values and sanitize them
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
     
     // In a real application, you would send this data to a server
-    // For now, we'll just show a success message
-    alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon at ${email}.`);
+    // For now, we'll show a success message using a safer method
+    const successMessage = document.createElement('div');
+    successMessage.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #10b981; color: white; padding: 1rem 2rem; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 9999;';
+    successMessage.textContent = `Thank you, ${name.substring(0, 50)}! Your message has been received. I'll get back to you soon.`;
+    document.body.appendChild(successMessage);
+    
+    // Remove the notification after 5 seconds
+    setTimeout(() => {
+        successMessage.remove();
+    }, 5000);
     
     // Reset form
     contactForm.reset();
@@ -110,11 +118,18 @@ if (heroSubtitle) {
     setTimeout(typeWriter, 500);
 }
 
-// Add parallax effect to hero section
+// Add parallax effect to hero section with throttling for better performance
+let ticking = false;
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+            ticking = false;
+        });
+        ticking = true;
     }
 });
