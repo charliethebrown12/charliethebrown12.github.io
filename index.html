@@ -14,6 +14,11 @@
             <div class="nav-brand">
                 <a href="#home">CB</a>
             </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -28,11 +33,14 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Charles Butler</span></h1>
-                <p class="hero-subtitle">Computer Scientist | Network Manager | Graphic Designer</p>
-                <p class="hero-description">Bridging the gap between technical infrastructure and creative visual design.</p>
+                <p class="hero-subtitle">Network Project Manager | Developer | Designer</p>
+                <p class="hero-description">Merging technical engineering with creative visual storytelling.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/charliethebrown12" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -44,16 +52,16 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-placeholder">
-                        <img src="PXL_20241215_213512269.jpg" alt="Charles Butler">
+                        <img src="PXL_20241215_213512269.jpg" alt="Charles Butler" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>I am a Computer Science student at Brigham Young University with a focus on Software Engineering. Currently, I serve as a Network Project Manager for the BYU Office of IT, where I manage complex technical deployments.</p>
-                    <p>My unique value lies in the intersection of systems and aesthetics. Whether I'm automating IT workflows with VBA or crafting visual assets for a design project, I prioritize efficiency, clarity, and user experience.</p>
+                    <p>I am a Computer Science student at Brigham Young University with a Software Engineering emphasis. I currently manage technical infrastructure deployments as a <strong>Network Project Manager</strong> for the BYU Office of IT.</p>
+                    <p>My work is defined by a dual passion for backend systems and front-facing design. I thrive on creating tools that simplify complex workflows, whether through automation scripts or high-impact visual layouts.</p>
                     <div class="about-details">
                         <div class="detail-item"><i class="fas fa-map-marker-alt"></i> <span>Springville, Utah</span></div>
+                        <div class="detail-item"><i class="fas fa-envelope"></i> <span>butlercowboys@gmail.com</span></div>
                         <div class="detail-item"><i class="fas fa-graduation-cap"></i> <span>BYU: Computer Science (Software Engineering)</span></div>
-                        <div class="detail-item"><i class="fas fa-briefcase"></i> <span>Network Project Manager @ BYU Office of IT</span></div>
                     </div>
                 </div>
             </div>
@@ -62,33 +70,33 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical & Creative Skills</h2>
+            <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> Design & Creative</h3>
+                    <h3><i class="fas fa-paint-brush"></i> Design</h3>
                     <div class="skill-items">
                         <span class="skill-tag">Graphic Design</span>
                         <span class="skill-tag">Adobe Creative Suite</span>
-                        <span class="skill-tag">UI/UX Design</span>
-                        <span class="skill-tag">Video Editing</span>
+                        <span class="skill-tag">Video Production</span>
+                        <span class="skill-tag">Color Grading</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fas fa-code"></i> Engineering</h3>
                     <div class="skill-items">
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">JavaScript/React</span>
                         <span class="skill-tag">VBA Automation</span>
-                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-network-wired"></i> Systems</h3>
+                    <h3><i class="fas fa-network-wired"></i> Operations</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">Network Management</span>
-                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Network Project Management</span>
                         <span class="skill-tag">Home Assistant</span>
-                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
                     </div>
                 </div>
             </div>
@@ -97,35 +105,110 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Work</h2>
+            <h2 class="section-title">Selected Work</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-content">
-                        <h3>Graphic Design Portfolio</h3>
-                        <p>A collection of visual branding, layout designs, and digital assets focused on modern aesthetics.</p>
-                        <div class="project-tags"><span>Design</span><span>Branding</span></div>
+                        <h3>VBA Parts Estimation Tool</h3>
+                        <p>Developed an automated estimation and ordering system for the BYU Office of IT, reducing manual entry time by over 40%.</p>
+                        <div class="project-tags"><span>VBA</span><span>Automation</span><span>OIT</span></div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-content">
-                        <h3>IT Estimation Tool</h3>
-                        <p>A custom VBA-based automation system for IT parts ordering and estimation developed for BYU OIT.</p>
-                        <div class="project-tags"><span>VBA</span><span>Automation</span></div>
+                        <h3>Graphic Design Portfolio</h3>
+                        <p>A collection of visual identity work, typography studies, and layout designs tailored for modern brand aesthetics.</p>
+                        <div class="project-tags"><span>Design</span><span>Adobe Suite</span><span>Branding</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Network Infrastructure Deployment</h3>
+                        <p>Managing the planning and physical deployment of networking hardware across university facilities at BYU.</p>
+                        <div class="project-tags"><span>Project Mgmt</span><span>Networking</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Video Production Reel</h3>
+                        <p>Professional video editing and color grading samples, showcasing cinematic storytelling and visual effects.</p>
+                        <div class="project-tags"><span>Video</span><span>Color Grading</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Scalable Chess Server</h3>
+                        <p>A full-stack application for online gameplay, emphasizing real-time synchronization and move validation.</p>
+                        <div class="project-tags"><span>Node.js</span><span>Socket.io</span><span>Eng</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Smart Home Ecosystem</h3>
+                        <p>Centralized automation hub using Home Assistant and Docker to manage residential IoT devices and security.</p>
+                        <div class="project-tags"><span>Home Assistant</span><span>Docker</span><span>IoT</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section id="contact" class="contact">
-        </section>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm available for inquiries regarding Graphic Design, Software Engineering, or IT Project Management.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:butlercowboys@gmail.com">butlercowboys@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+12089632547">+1 (208) 963-2547</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Springville, Utah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="How can I help you?" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Charles Butler.</p>
+            <p>&copy; 2026 Charles Butler. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/charliethebrown12" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
-</html>
 </html>
