@@ -3,185 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio Website - Charlie Brown">
-    <title>Charlie Brown - Portfolio</title>
+    <meta name="description" content="Personal Portfolio - Charles Butler">
+    <title>Charles Butler | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
                 <a href="#home">CB</a>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Charles Butler</span></h1>
-                <p class="hero-subtitle">Full Stack Developer & Creative Problem Solver</p>
-                <p class="hero-description">I build exceptional digital experiences that make a difference</p>
+                <p class="hero-subtitle">Computer Scientist | Network Manager | Graphic Designer</p>
+                <p class="hero-description">Bridging the gap between technical infrastructure and creative visual design.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/charliethebrown12" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-placeholder">
-                        <img src="PXL_20241215_213512269.jpg" alt="A young man in a white button-down shirt and a striped tie, smiling in front of a window.">
-                        <i class="fas fa-user"></i>
+                        <img src="PXL_20241215_213512269.jpg" alt="Charles Butler">
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>I'm a passionate developer with a love for creating elegant solutions to complex problems. With experience in web technologies, I specialize in building responsive, user-friendly applications that deliver real value.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, inside gaming, or enjoying time with my family.</p>
+                    <p>I am a Computer Science student at Brigham Young University with a focus on Software Engineering. Currently, I serve as a Network Project Manager for the BYU Office of IT, where I manage complex technical deployments.</p>
+                    <p>My unique value lies in the intersection of systems and aesthetics. Whether I'm automating IT workflows with VBA or crafting visual assets for a design project, I prioritize efficiency, clarity, and user experience.</p>
                     <div class="about-details">
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Location: Springville, Utah</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email: butlercowboys@gmail.com</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Degree: Computer Science: Software Engineering Emphasis</span>
-                        </div>
+                        <div class="detail-item"><i class="fas fa-map-marker-alt"></i> <span>Springville, Utah</span></div>
+                        <div class="detail-item"><i class="fas fa-graduation-cap"></i> <span>BYU: Computer Science (Software Engineering)</span></div>
+                        <div class="detail-item"><i class="fas fa-briefcase"></i> <span>Network Project Manager @ BYU Office of IT</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title">Technical & Creative Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <h3><i class="fas fa-paint-brush"></i> Design & Creative</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">Adobe Creative Suite</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Video Editing</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <h3><i class="fas fa-code"></i> Engineering</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">VBA Automation</span>
+                        <span class="skill-tag">React</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <h3><i class="fas fa-network-wired"></i> Systems</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">MySQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Network Management</span>
                         <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Home Assistant</span>
+                        <span class="skill-tag">Project Management</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:hello@example.com">butlercowboys@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <a href="tel:+1234567890">+1 (208) 963-2547</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Springville, Utah</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Graphic Design Portfolio</h3>
+                        <p>A collection of visual branding, layout designs, and digital assets focused on modern aesthetics.</p>
+                        <div class="project-tags"><span>Design</span><span>Branding</span></div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>IT Estimation Tool</h3>
+                        <p>A custom VBA-based automation system for IT parts ordering and estimation developed for BYU OIT.</p>
+                        <div class="project-tags"><span>VBA</span><span>Automation</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        </section>
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Charles Butler. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/charliethebrown12" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            </div>
+            <p>&copy; 2026 Charles Butler.</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
+</html>
 </html>
